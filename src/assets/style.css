@@ -1,3 +1,9 @@
 h1 {
     margin-bottom: 20px !important
 }
+
+.menuImg {
+    margin: 0 auto;
+    /* width: 600px; */
+    /* height: 600px; */
+}
