@@ -1,39 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/style.css'
+import './modules/contactButton'
+import './modules/content'
+import './modules/menuButton'
 
-const content = document.querySelector('#content')
-const heading = document.createElement('h1')
-const buttonContainer = document.createElement('div')
-const contactButton = document.createElement('button')
-const menuButton = document.createElement('button')
-
-//header creation
-heading.textContent = 'Restaurant Page'
-heading.classList.add('display-1', 'd-flex', 'justify-content-center')
-content.appendChild(heading)
-
-//button creation
-buttonContainer.classList.add('row', 'd-flex', 'justify-content-center')
-contactButton.classList.add('btn', 'btn-primary', 'mx-2')
-menuButton.classList.add('btn', 'btn-primary', 'mx-2')
-contactButton.textContent = 'Contact'
-menuButton.textContent = 'Menu'
-contactButton.setAttribute('type', 'button')
-menuButton.setAttribute('type', 'button')
-menuButton.textContent = 'Menu'
-content.appendChild(buttonContainer)
-buttonContainer.appendChild(menuButton)
-buttonContainer.appendChild(contactButton)
 
 // menu content
+
+const menuCreation = () => {
 const menuContainer = document.createElement('div')
+menuContainer.classList.add('menuDiv')
 content.appendChild(menuContainer)
 const menuImg = document.createElement('img')
 menuImg.setAttribute('src', './src/assets/img/download.jpg')
-menuImg.classList.add('menuImg', 'img-fluid', 'd-flex', 'justify-content-center')
+menuImg.classList.add('menuImg', 'img-fluid', 'd-flex', 'justify-content-center', 'my-2')
 menuContainer.appendChild(menuImg)
-
+}
 //contact content
+
+const contactCreation = () => {
 const contactContainer = document.createElement('div')
 contactContainer.classList.add('contactDiv')
 content.appendChild(contactContainer)
@@ -43,3 +28,14 @@ headingContact.textContent= 'Contact me in my github'
 paragraphContact.textContent = 'https://github.com/yahir91'
 contactContainer.appendChild(headingContact)
 contactContainer.appendChild(paragraphContact)
+}
+
+
+
+
+
+menuCreation()
+
+// const render = () => {
+//     if (contactContainer == null)
+// }
