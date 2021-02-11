@@ -1,5 +1,3 @@
-// import menuCreation from "./menuButton.js"
-
 const content = document.querySelector('#content');
 const buttonContainer = document.createElement('div');
 export const contactButton = document.createElement('button');
