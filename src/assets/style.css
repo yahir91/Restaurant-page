@@ -7,3 +7,11 @@ h1 {
     /* width: 600px; */
     /* height: 600px; */
 }
+
+.contactDiv {
+    margin: 20px auto;
+    width: 600px;
+    height: 200px;
+    border: 3px solid brown;
+    text-align: center;
+}
