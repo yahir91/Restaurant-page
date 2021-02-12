@@ -1,5 +1,3 @@
-// import contactButton from './content.js'
-
 const content = document.querySelector('#content');
 
 export const contactCreation = () => {
