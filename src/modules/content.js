@@ -1,6 +1,6 @@
 const content = document.querySelector('#content');
 const buttonContainer = document.createElement('div');
-export const homeButton = document.createElement('button')
+export const homeButton = document.createElement('button');
 export const contactButton = document.createElement('button');
 export const menuButton = document.createElement('button');
 
@@ -25,7 +25,7 @@ export const buttonCreation = () => {
   menuButton.setAttribute('type', 'button');
   menuButton.textContent = 'Menu';
   content.appendChild(buttonContainer);
-  buttonContainer.appendChild(homeButton)
+  buttonContainer.appendChild(homeButton);
   buttonContainer.appendChild(menuButton);
   buttonContainer.appendChild(contactButton);
 };

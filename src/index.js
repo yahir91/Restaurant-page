@@ -8,6 +8,6 @@ import { menuListener } from './modules/menuButton';
 
 
 render();
-homeListener()
+homeListener();
 contactListener();
 menuListener();
